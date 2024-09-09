@@ -212,7 +212,7 @@ foreign key(issued_id) references issued_status(issued_id);
 
 
 ### 3. CTAS (Create Table As Select) 
-[library_management_part2]()
+[library_management_part2](https://github.com/Saikiran-Erukonda/Library_management_system_sql/blob/main/Library%20management%20project_part_2.sql)
 
 - **Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book_id,book name,total issued count**
 
@@ -316,7 +316,7 @@ where I_S.issued_id not in (select issued_id from return_status) order by (curre
 ```
 
 ## Advanced SQL Operations
-[library_management_part3]()
+[library_management_part3](https://github.com/Saikiran-Erukonda/Library_management_system_sql/blob/main/Library%20management%20project%20part%203.sql)
 **Task 13: Identify Members with Overdue Books**  
 Write a query to identify members who have overdue books (assume a 30-day return period). Display the member's_id, member's name, book title, issue date, and days overdue.
 
