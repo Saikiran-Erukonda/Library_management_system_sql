@@ -27,7 +27,7 @@ This project demonstrates the implementation of a Library Management System usin
 ![Screenshot 2024-09-07 183952](https://github.com/user-attachments/assets/215c62d6-42b9-4ed4-9b79-45ae13303874)
 
 
-- **Database Creation**: Created a database named `library_db`.
+- **Database Creation**: Created a database named `library_db`.[library_schema](https://github.com/Saikiran-Erukonda/Library_management_system_sql/blob/main/Library%20management%20project.sql)
 - **Table Creation**: Created tables for branches, employees, members, books, issued_status, and return_status. Each table includes relevant columns and relationships.
 
 ```sql
@@ -91,7 +91,8 @@ select * from members;
 select * from return_status;
 ```
 
-### 2. CRUD Operations
+### 2. CRUD Operations 
+[library_management_sql](https://github.com/Saikiran-Erukonda/Library_management_system_sql/blob/main/Library%20management%20project.sql)
 
 - **Create**: Inserted sample records into the `books` table.
 - **Read**: Retrieved and displayed data from various tables.
@@ -210,7 +211,8 @@ foreign key(issued_id) references issued_status(issued_id);
 ```
 
 
-### 3. CTAS (Create Table As Select)
+### 3. CTAS (Create Table As Select) 
+[library_management_part2]()
 
 - **Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book_id,book name,total issued count**
 
@@ -314,7 +316,7 @@ where I_S.issued_id not in (select issued_id from return_status) order by (curre
 ```
 
 ## Advanced SQL Operations
-
+[library_management_part3]()
 **Task 13: Identify Members with Overdue Books**  
 Write a query to identify members who have overdue books (assume a 30-day return period). Display the member's_id, member's name, book title, issue date, and days overdue.
 
