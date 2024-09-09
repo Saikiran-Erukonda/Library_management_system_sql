@@ -58,7 +58,7 @@ create table members(member_id varchar(5),member_name varchar(30),member_address
 create table return_status(return_id varchar(5), issued_id varchar(5),  return_book_name varchar(55), return_date date, return_book_isbn varchar(20));
 ```
 -- forgot to add primary key,let we add it
-```
+```sql
 
 alter table books add primary key(isbn);
 select * from books;
