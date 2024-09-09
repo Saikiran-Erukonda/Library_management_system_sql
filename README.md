@@ -158,6 +158,7 @@ from issued_status
 group by issued_member_id having count(issued_id)>1 order by count(issued_id) desc;
 ```
 ## Create Foreign keys to link the tables  using Queries.
+
 ```sql
 /*=========================================================================================================
 |	Create Foreign keys to link the tables  using Queries.			          |
@@ -207,6 +208,7 @@ delete from return_status where issued_id not in (select issued_id from issued_s
 alter table return_status add constraint fk_issued_id			--//issued_id
 foreign key(issued_id) references issued_status(issued_id);
 ```
+
 
 ### 3. CTAS (Create Table As Select)
 
