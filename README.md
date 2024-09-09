@@ -2,7 +2,9 @@
 
 ## Project Overview
 **Project Name : Library Management System Using SQL**
+
 **Project level**: intermediate 
+
 **Author** : Erukonda saikiran
 -- In order to improve SQL skills and it is part of portfolio projects
 **Database**: `Library_db`
